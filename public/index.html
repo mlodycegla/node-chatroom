@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatroom</title>
+
+    <link rel="stylesheet" href="./assets/main.css">
+</head>
+
+<body>
+
+    <div class="login">
+        <div class="login_inputbg">
+            <input type="text" class="login_input" name="username" id="username" placeholder="Enter your username">
+            <div class="login_button_group">
+                <button type="button" id="login_sendbtn" class="loginbutton login_enterbutton">Enter</button>
+                <button type="button" id="login_resetbtn" class="loginbutton login_resetbutton">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="chat">
+            <ul class="chat_history" id="chat_history">
+            </ul>
+            <div class="chat_fill">
+                <input class="chat_input" id="chat_msg" type="text" placeholder="Enter your message">
+                <button class="chat_btn" id="chat_sendmsg" type="button">Send</button>
+            </div>
+        </div>
+    </main>
+
+
+    <script src=" https://cdn.socket.io/4.6.0/socket.io.min.js"
+        integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+" crossorigin="anonymous">
+    </script>
+    <script src="./assets/main.js"></script>
+</body>
+
+</html>
